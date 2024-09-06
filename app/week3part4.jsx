@@ -14,7 +14,16 @@ const week3part2 = () => {
                 paddingVertical: 60,
             }}
         >
-            <Fontisto name="locked" size={100} color="black" />
+            <View>
+                <Text
+                    style={{
+                        fontSize: 60,
+                        fontWeight: 700,
+                    }}
+                >
+                    CODE
+                </Text>
+            </View>
             <View>
                 <Text
                     style={{
@@ -24,7 +33,7 @@ const week3part2 = () => {
                         textAlign: "center",
                     }}
                 >
-                    FORGET {"\n"}PASSWORD
+                    VERIFICATION
                 </Text>
             </View>
             <View>
@@ -36,39 +45,39 @@ const week3part2 = () => {
                         textAlign: "center",
                     }}
                 >
-                    Provide your account’s email for which you want to reset
-                    your password
+                    Enter ontime password sent on {"\n"} ++849092605798
                 </Text>
             </View>
             <View
                 style={{
-                    position: "relative",
-                    width: "80%",
-                    marginHorizontal: "auto",
+                    display: "flex",
+                    flexDirection: "row",
                 }}
             >
-                <Fontisto
-                    name="email"
-                    size={40}
-                    color="black"
-                    style={{
-                        position: "absolute",
-                        top: 5,
-                        left: 10,
-                    }}
-                />
                 <TextInput
-                    placeholder="Email"
-                    keyboardType="email-address"
-                    style={{
-                        paddingHorizontal: 60,
-                        paddingTop: 10,
-                        paddingBottom: 15,
-                        fontWeight: 600,
-                        fontSize: 20,
-                        backgroundColor: "#C4C4C4",
-                    }}
-                />
+                    style={styles.inputSquare}
+                    keyboardType="numeric"
+                ></TextInput>
+                <TextInput
+                    style={styles.inputSquare}
+                    keyboardType="numeric"
+                ></TextInput>
+                <TextInput
+                    style={styles.inputSquare}
+                    keyboardType="numeric"
+                ></TextInput>
+                <TextInput
+                    style={styles.inputSquare}
+                    keyboardType="numeric"
+                ></TextInput>
+                <TextInput
+                    style={styles.inputSquare}
+                    keyboardType="numeric"
+                ></TextInput>
+                <TextInput
+                    style={styles.inputSquare}
+                    keyboardType="numeric"
+                ></TextInput>
             </View>
             <View
                 style={{
@@ -79,10 +88,9 @@ const week3part2 = () => {
                     paddingHorizontal: 40,
                 }}
             >
-                {" "}
                 <View style={styles.buttonYellow}>
                     <Pressable>
-                        <Text style={styles.textButtonYellow}>NEXT</Text>
+                        <Text style={styles.textButtonYellow}>VERIFY CODE</Text>
                     </Pressable>
                 </View>
             </View>
@@ -103,5 +111,13 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 700,
         textAlign: "center",
+    },
+    inputSquare: {
+        width: 50,
+        height: 50,
+        borderWidth: 1,
+        borderColor: "#c4c4c4",
+        borderStyle: "solid",
+        boxShadow: "0px 4px 4px 0px #00000040",
     },
 });

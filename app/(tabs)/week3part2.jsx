@@ -4,7 +4,6 @@ import { LinearGradient } from "expo-linear-gradient";
 const week3part2 = () => {
     return (
         <LinearGradient
-            // Button Linear Gradient
             colors={["#c7f4f6", "#c7f4f6", "#e5f4f5", "#00ccf9"]}
             style={{
                 flex: 1,
